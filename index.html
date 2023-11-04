@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/763d13a511.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/ico" href="assets/imgs/favicon.ico">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <p>Complete este formulario con la información requerida</p>
+    <form method="post" action="https://acortar.link/J4TEXv">
+        <fieldset>
+            <label for="primer-nombre">Primer nombre: <input id="primer-nombre" name="primer-nombre" type="text" required></label>
+            <label for="primer-apellido">Primer apellido: <input id="primer-apellido" name="primer-apellido" type="texto" required></label>
+            <label for="email">Dirección de correo electrónico: <input id="email" name="email" type="text" required></label>
+            <label for="new-password">Crear contraseña: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo de cuenta (requerido)</legend>
+            <label for="personal-account"><input id="personal-account" name="account-type" type="radio" class="inline" checked>Personal</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline">Negocio</label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Sube una foto de perfil: <input id="profile-picture" type="file" name="file"></label>
+            <label for="edad">Ingrese su edad (años) <input id="edad" type="number" name="edad" min="18" max="120"></label>
+            <label for="referrer">¿Cómo se enteró de nosotros?
+                <select id="referrer" name="referrer">
+                    <option value="">(Seleccione una opción)</option>
+                    <option value="1">Linkedin</option>
+                    <option value="2">Instagram</option>
+                    <option value="3">Facebook</option>
+                    <option value="4">Google</option>
+                    <option value="5">Otro</option>
+                </select>
+            </label>
+            <label for="bio">Proporsionar una biografía:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Los valores que me representan..."></textarea>
+            </label>
+        </fieldset>
+        <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions">Acepto <a href="assets/doc/Términos y condiciones.docx">terminos y condiciones</a> 
+        </label>
+        <input id="Enviar" type="Enviar" value="Enviar">
+    </form>
+</body>
+</html>
